@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Partida {
 	static protected String paraules[] = {"hola","programació","casa"};
     static protected int index;
-    static protected String paraula_usuari;
+    static protected String paraula_usuari = "";
 	
 	public Partida(){
 		Random rand = new Random();
@@ -18,7 +18,7 @@ public class Partida {
 
 	    
 	    
-	    ///CONSTANT QUE CONTE LA LLARGADA DE LA PARAULA
+	    ///CONSTANT QUE CONTE LA LLARGADA DE LA PARAULA 
 	    final int largada_paraula = paraules[index].length();
 	    
 		for (int i=0; i<largada_paraula+1; i++) {
