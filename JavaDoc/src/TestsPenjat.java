@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.util.Random;
+
 import org.junit.Test;
 
 public class TestsPenjat {
@@ -13,8 +15,12 @@ public class TestsPenjat {
 	
 	public void testNova_lletra() {
 		char nova = 'h';
-		
-		assertEquals("ERROR", true, nova_lletra(nova));
+		Random rand = new Random();
+        index = rand.nextInt(3);
+        for (int i=0; i<paraules[index].length(); i++) {
+            p += "_";
+        }
+		assertEquals("ERROR: HA DE TROBAR LA LLETRA", true, nova_lletra(nova));
 	}
 	static public boolean nova_lletra(char nova) {
         boolean trobada = false;
